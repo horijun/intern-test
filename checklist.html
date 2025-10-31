@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>出発前チェックリスト（印刷用） | スマート通勤</title>
+  <meta name="description" content="クロスバイク通勤の出発前チェックリスト。印刷・保存に対応。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    @media print { .no-print { display: none !important; } }
+    .list { display:grid; gap:10px; }
+    .item { display:flex; align-items:flex-start; gap:10px; cursor: pointer; }
+    .box { width:20px; height:20px; border:2px solid var(--color-primary); border-radius:4px; flex:none; display:inline-grid; place-items:center; background:#fff; }
+    .item[aria-checked="true"] .box { background: #7c3aed; border-color: #6d28d9; }
+    .item[aria-checked="true"] .box::after { content: '\2713'; color:#ffffff; font-weight:700; font-size:14px; }
+  </style>
+</head>
+<body>
+  <header class="header no-print">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><span class="brand-mark"></span><span>スマート通勤</span></a>
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a href="index.html">トップ</a>
+        <a href="guide.html">はじめ方</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">Checklist</span>
+        <h2>出発前チェックリスト</h2>
+        <p class="lead">印刷して玄関に。スマホに保存もOK。</p>
+      </div>
+      <div class="card">
+        <div class="list" id="checklist">
+          <div class="item" role="checkbox" tabindex="0" aria-checked="false"><div class="box"></div><div>タイヤ空気圧（推奨値確認）</div></div>
+          <div class="item" role="checkbox" tabindex="0" aria-checked="false"><div class="box"></div><div>ブレーキ効き・ワイヤー張り</div></div>
+          <div class="item" role="checkbox" tabindex="0" aria-checked="false"><div class="box"></div><div>ライト（前後）バッテリー残量</div></div>
+          <div class="item" role="checkbox" tabindex="0" aria-checked="false"><div class="box"></div><div>鍵（ロック）携行</div></div>
+          <div class="item" role="checkbox" tabindex="0" aria-checked="false"><div class="box"></div><div>雨具（天候確認）</div></div>
+          <div class="item" role="checkbox" tabindex="0" aria-checked="false"><div class="box"></div><div>予備チューブ/携帯ポンプ</div></div>
+          <div class="item" role="checkbox" tabindex="0" aria-checked="false"><div class="box"></div><div>会社置き着替え・タオル</div></div>
+        </div>
+      </div>
+      <div class="no-print" style="margin-top:14px; display:flex; gap:10px;">
+        <button class="btn btn-primary" onclick="window.print()">印刷する</button>
+        <a class="btn" style="border-color:var(--color-primary); color:var(--color-primary);" href="guide.html">ガイドに戻る</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer no-print">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand" style="margin-bottom:8px"><span class="brand-mark"></span><span>スマート通勤</span></div>
+        <small>© 2025 Smart Commuting.</small>
+      </div>
+      <div>
+        <strong>資料</strong>
+        <div style="margin-top:8px; display:grid; gap:6px;">
+          <a href="guide.html">はじめ方ガイド</a>
+        </div>
+      </div>
+      <div>
+        <strong>操作</strong>
+        <p style="margin-top:8px">ブラウザの印刷からPDF保存も可能です。</p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function(){
+      var list = document.getElementById('checklist');
+      if (!list) return;
+      list.addEventListener('click', function(e){
+        var item = e.target.closest('.item');
+        if (!item) return;
+        var current = item.getAttribute('aria-checked') === 'true';
+        item.setAttribute('aria-checked', String(!current));
+      });
+      list.addEventListener('keydown', function(e){
+        var item = e.target.closest('.item');
+        if (!item) return;
+        if (e.key === ' ' || e.key === 'Enter') {
+          e.preventDefault();
+          var current = item.getAttribute('aria-checked') === 'true';
+          item.setAttribute('aria-checked', String(!current));
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

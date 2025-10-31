@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>新宿区おすすめ通勤コース | スマート通勤</title>
+  <meta name="description" content="新宿区内のおすすめ自転車通勤コースを距離・所要時間・安全ポイント付きで紹介。朝ライドに最適なルート。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+  .review-list { margin: 16px 0 0 0; padding: 0; list-style: none; display: grid; gap: 14px; }
+  .review-card { background: #181c28; color: #ffeedd; border-radius: 12px; padding: 16px 18px; border: 1px solid #352e16; box-shadow: 0 6px 16px #0005; position: relative; }
+  .review-stars { color: #FFD93B; font-size: 1.08em; margin-right: 7px; }
+  .review-meta { font-size: 13px; color: #ffeeddc0; margin-bottom: 4px; }
+  .review-form { margin-top: 8px; margin-bottom: 18px; display: flex; flex-direction: column; gap: 5px; background: #13151d; border-radius: 8px; padding: 11px 12px; border: 1px solid #cbb25c33; box-shadow: 0 2px 7px #0002; }
+  .review-form label { font-size: 13px; color: #f9e6ae; margin-bottom: 1px; }
+  .review-form input[type=text] { background: #fffbe3; color: #14150c; border: 1px solid #d1c581; border-radius: 5px; padding: 6px 10px; font-size: 14px; }
+  .review-form textarea { background: #fffbe3; color: #14150c; border: 1px solid #d1c581; border-radius: 5px; font-size: 14px; padding: 7px 10px; min-height: 34px; }
+  .review-stars-edit { display: inline-flex; gap:2px; margin:3px 5px 0 0; position:relative; top: 3px; }
+  .review-stars-edit span { cursor: pointer; font-size: 1.15em; color: #d6b400; }
+  .review-form button { align-self: flex-start; padding:6px 16px; background: linear-gradient(90deg, #f5b301, #ffd56a); color: #181c28; font-weight: 600; border: none; border-radius: 5px; cursor:pointer; box-shadow:0 3px 10px #0002; }
+  .review-form button:active { background: #ffeeb2; }
+  .review-delete-btn { position: absolute; top: 11px; right: 13px; background: #fff0; color: #da6e73; border: 1.2px solid #efb9b9; border-radius: 8px; font-size: 13px; padding: 2.5px 10px; cursor: pointer; transition: background .1s, border-color .1s; }
+  .review-delete-btn:hover { background: #f6e0e0; border-color: #f07171; color: #b12b2b; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><span class="brand-mark"></span><span>スマート通勤</span></a>
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a href="index.html">トップ</a>
+        <a href="appeal.html">魅力</a>
+        <a href="guide.html">はじめ方</a>
+        <a href="bikes.html">おすすめ</a>
+        <a href="shinjuku.html">コース</a>
+        <a href="voices.html">体験談</a>
+        <a href="future.html">未来</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Shinjuku Route</span>
+          <h2>新宿区おすすめ通勤コース</h2>
+          <p class="lead">信号・車通り・勾配のバランスが良く、朝の“整う時間”に最適な3ルート。</p>
+        </div>
+        <div class="grid-3">
+          <!-- コース1 -->
+          <div class="card" data-course="a">
+            <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=800&auto=format&fit=crop" alt="外濠沿いの朝ランルート（市ヶ谷方面）">
+            <h3>A. 外濠沿いリフレッシュ 6.2km</h3>
+            <p>所要：22〜28分／高低差：少／路面：良</p>
+            <ul>
+              <li>新宿御苑前 → 四谷三丁目 → 市ヶ谷外濠公園</li>
+              <li>朝日が気持ちいい外濠沿い。信号間隔が長めで流れ良好</li>
+              <li>歩道との干渉に注意。ベル・減速で安全に</li>
+            </ul>
+            <ul class="review-list" id="reviewlist-a">
+              <li class="review-card" data-base="1">
+                <div class="review-meta"><span class="review-stars">★★★★★</span>匿名さん／30代男性</div>
+                <div>外濠沿いの朝日が最高！信号が少なくて自分のペースで走りやすいです。</div>
+              </li>
+              <li class="review-card" data-base="1">
+                <div class="review-meta"><span class="review-stars">★★★★☆</span>主婦A</div>
+                <div>歩道の人が多い時間はやや注意ですが、景色が良くて毎週末も走っています。</div>
+              </li>
+            </ul>
+            <form class="review-form" data-for="a">
+              <label>お名前（任意）<input type="text" name="name" maxlength="12"></label>
+              <label>評価
+                <span class="review-stars-edit" tabindex="0" role="radiogroup">
+                  <span data-v="1">★</span><span data-v="2">★</span><span data-v="3">★</span><span data-v="4">★</span><span data-v="5">★</span>
+                </span>
+              </label>
+              <label>コメント<textarea name="text" maxlength="60" required placeholder="コースの感想をどうぞ（～60文字）"></textarea></label>
+              <button type="submit">レビュー投稿</button>
+            </form>
+          </div>
+          <!-- コース2 -->
+          <div class="card" data-course="b">
+            <img src="https://images.unsplash.com/photo-1462681915573-023dca8d696f?q=80&w=800&auto=format&fit=crop" alt="神田川沿いの遊歩道と自転車">
+            <h3>B. 神田川クルーズ 7.8km</h3>
+            <p>所要：26〜34分／高低差：少／路面：並</p>
+            <ul>
+              <li>高田馬場 → 面影橋 → 神田川沿い → 早稲田</li>
+              <li>車道併走区間は控えめ。景観が良くリラックス</li>
+              <li>歩行者多め。朝は速度抑制＋アイコンタクト</li>
+            </ul>
+            <ul class="review-list" id="reviewlist-b">
+              <li class="review-card" data-base="1">
+                <div class="review-meta"><span class="review-stars">★★★★☆</span>Oさん／20代男性</div>
+                <div>川沿いの風景が癒やされるコース。アップダウンも少なくて気楽です。</div>
+              </li>
+              <li class="review-card" data-base="1">
+                <div class="review-meta"><span class="review-stars">★★★☆☆</span>30代女性</div>
+                <div>朝は歩行者が多めなのでゆっくり走るのが安心。静かな日曜朝が特におすすめ。</div>
+              </li>
+            </ul>
+            <form class="review-form" data-for="b">
+              <label>お名前（任意）<input type="text" name="name" maxlength="12"></label>
+              <label>評価
+                <span class="review-stars-edit" tabindex="0" role="radiogroup">
+                  <span data-v="1">★</span><span data-v="2">★</span><span data-v="3">★</span><span data-v="4">★</span><span data-v="5">★</span>
+                </span>
+              </label>
+              <label>コメント<textarea name="text" maxlength="60" required placeholder="コースの感想をどうぞ（～60文字）"></textarea></label>
+              <button type="submit">レビュー投稿</button>
+            </form>
+          </div>
+          <!-- コース3 -->
+          <div class="card" data-course="c">
+            <img src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?q=80&w=800&auto=format&fit=crop" alt="明治通りの広い道路を走る自転車">
+            <h3>C. 明治通りスムース 5.4km</h3>
+            <p>所要：18〜24分／高低差：中／路面：良</p>
+            <ul>
+              <li>新宿三丁目 → 北参道 → 千駄ヶ谷 → 外苑前</li>
+              <li>直線が長く巡航しやすい。時間の再現性が高い</li>
+              <li>大型車に注意。視認性アップ（リアライト常時点灯）</li>
+            </ul>
+            <ul class="review-list" id="reviewlist-c">
+              <li class="review-card" data-base="1">
+                <div class="review-meta"><span class="review-stars">★★★★★</span>匿名</div>
+                <div>スピード感抜群！信号も少なく、とても気持ち良いです。</div>
+              </li>
+              <li class="review-card" data-base="1">
+                <div class="review-meta"><span class="review-stars">★★★☆☆</span>40代会社員</div>
+                <div>車が多いタイミングだけ注意。でも到着時間が安定するので助かる。</div>
+              </li>
+            </ul>
+            <form class="review-form" data-for="c">
+              <label>お名前（任意）<input type="text" name="name" maxlength="12"></label>
+              <label>評価
+                <span class="review-stars-edit" tabindex="0" role="radiogroup">
+                  <span data-v="1">★</span><span data-v="2">★</span><span data-v="3">★</span><span data-v="4">★</span><span data-v="5">★</span>
+                </span>
+              </label>
+              <label>コメント<textarea name="text" maxlength="60" required placeholder="コースの感想をどうぞ（～60文字）"></textarea></label>
+              <button type="submit">レビュー投稿</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" style="background:#0b2a4d05">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Tips</span>
+          <h2>安全・快適のコツ</h2>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3>時間帯最適化</h3>
+            <p>7:30以前は歩行者が少なくスムース。雨上がりは滑りやすい白線・橋面に注意。</p>
+          </div>
+          <div class="card">
+            <h3>寄り道ポイント</h3>
+            <p>新宿御苑周辺のカフェ、外苑いちょう並木の朝活スポットなど、到着前のひと呼吸に。</p>
+          </div>
+        </div>
+        <div style="margin:28px 0 8px 0">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.8974303156825!2d139.69527421525898!3d35.68948718019209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd314d7242f%3A0xf8a67b3aac65d737!2z5paw5a6_5LqV6aeF!5e0!3m2!1sja!2sjp!4v1717828353219!5m2!1sja!2sjp" width="100%" height="352" style="border:0; border-radius:16px; box-shadow:0 8px 28px #0008;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="card" style="margin-top:12px">
+          <h3>地図リンク</h3>
+          <p><a href="https://www.google.com/maps" target="_blank" rel="noopener">Googleマップで開く（各自ルート保存を推奨）</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand" style="margin-bottom:8px"><span class="brand-mark"></span><span>スマート通勤</span></div>
+        <small>© 2025 Smart Commuting.</small>
+      </div>
+      <div>
+        <strong>ページ</strong>
+        <div style="margin-top:8px; display:grid; gap:6px;">
+          <a href="appeal.html">魅力</a>
+          <a href="guide.html">はじめ方</a>
+          <a href="bikes.html">おすすめ</a>
+          <a href="shinjuku.html">コース</a>
+          <a href="voices.html">体験談</a>
+          <a href="future.html">未来</a>
+        </div>
+      </div>
+      <div>
+        <strong>相談</strong>
+        <p style="margin-top:8px">コース相談は <a href="mailto:hello@example.com">hello@example.com</a> へ。</p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // 星UI＋localStorageレビュー＋削除対応
+    function getStoredReviews(cid) {
+      try {return JSON.parse(localStorage.getItem('shinjuku-reviews-'+cid) || '[]');}catch(e){return[];}
+    }
+    function saveStoredReviews(cid, arr) {
+      localStorage.setItem('shinjuku-reviews-'+cid, JSON.stringify(arr));
+    }
+    function renderReviewsList(cid) {
+      let ul = document.getElementById('reviewlist-'+cid);
+      if (!ul) return;
+      let baseLis = Array.from(ul.querySelectorAll('.review-card[data-base]'));
+      for(let i=ul.children.length-1;i>=0;i--){
+        if(!ul.children[i].hasAttribute('data-base')) ul.removeChild(ul.children[i]);
+      }
+      let arr = getStoredReviews(cid);
+      arr.forEach((item, idx)=>{
+        let el = document.createElement('li'); el.className='review-card'; el.setAttribute('data-id', idx);
+        el.innerHTML = `
+          <div class="review-meta"><span class="review-stars">${'★★★★★☆☆☆☆☆'.slice(5-item.star,10-item.star)}</span>${item.name||'匿名'}<span style='font-size:12px; float:right; color:#dcc'>${item.date||''}</span></div>
+          <div>${item.text}</div>
+          <button class="review-delete-btn" data-i="${idx}" title="このレビューを削除">削除</button>
+        `;
+        ul.appendChild(el);
+      });
+      ul.querySelectorAll('.review-delete-btn').forEach(btn=>{
+        btn.onclick=function(e){
+          let i = parseInt(btn.getAttribute('data-i'),10);
+          let arr = getStoredReviews(cid);
+          arr.splice(i,1);
+          saveStoredReviews(cid,arr);
+          renderReviewsList(cid);
+        };
+      });
+    }
+    function setupReviewForms() {
+      document.querySelectorAll('.review-form').forEach(function(form){
+        let stars = form.querySelectorAll('.review-stars-edit span');
+        let rating = 0;
+        let updateUI = function(val) {
+          stars.forEach(function(s, i){ s.textContent = i < val ? '★' : '☆'; });
+        };
+        stars.forEach(function(star,idx){
+          star.addEventListener('mouseenter',()=>updateUI(idx+1));
+          star.addEventListener('click',()=>{rating=idx+1; updateUI(rating);});
+        });
+        form.addEventListener('mouseleave',()=>updateUI(rating));
+        form.addEventListener('submit',function(e){
+          e.preventDefault();
+          if(rating<1) {alert('評価（星）を選んでください。');return;}
+          let name = form.name.value.trim() || '匿名';
+          let text = form.text.value.trim();
+          if(!text) return;
+          let date = new Date();
+          let dateStr = date.getFullYear()+"/"+(date.getMonth()+1)+"/"+date.getDate()+" "+(('0'+date.getHours()).slice(-2))+":"+(('0'+date.getMinutes()).slice(-2));
+          let item = {star:rating,name:name,text:text,date:dateStr};
+          let course = form.getAttribute('data-for');
+          let arr = getStoredReviews(course);
+          arr.push(item);
+          saveStoredReviews(course, arr);
+          renderReviewsList(course);
+          form.reset(); rating=0; updateUI(0);
+        });
+        updateUI(0);
+      });
+      ['a','b','c'].forEach(renderReviewsList);
+    }
+    window.addEventListener('DOMContentLoaded', setupReviewForms);
+  </script>
+</body>
+</html>
